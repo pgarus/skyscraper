@@ -61,6 +61,7 @@ void ScreenScraper::getSearchResults(QList<GameEntry> &gameEntries,
   }
   */
   QString gameUrl = "https://www.screenscraper.fr/api2/jeuInfos.php?devid=muldjord&devpassword=" + StrTools::unMagic("204;198;236;130;203;181;203;126;191;167;200;198;192;228;169;156") + "&softname=skyscraper" VERSION "&ssid=" + config->user + "&sspassword=" + config->password + "&output=xml&" + searchName;
+  printf("URL IS: '%s'\n", gameUrl.toStdString().c_str());
   manager.request(gameUrl);
   q.exec();
   data = manager.getData();
