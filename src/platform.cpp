@@ -1099,6 +1099,7 @@ QStringList Platform::getAliases(QString platform)
     aliases.append("super nintendo entertainment system (snes)");
     aliases.append("super nintendo");
     aliases.append("super famicom");
+    aliases.append("nintendo power");
   } else if(platform == "trs-80") {
     aliases.append("trs-80 color computer");
   } else if(platform == "vic20") {
